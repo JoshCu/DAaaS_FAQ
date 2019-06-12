@@ -1,0 +1,194 @@
+<style>
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -60px;
+        visibility: hidden;
+    }
+    
+    .contents{
+        width: 20%;
+        display: inline-block;
+        background: #efefef;
+        padding: 15px;
+        border-radius: 10px;
+        position: fixed;
+        left: 0;
+        top: 70px;
+    }
+    
+    .mainpanel {
+        width: 80%;
+        margin-left:20%;
+        background: #efefef;
+        padding: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 10px;
+    }
+    
+    h2 {
+        margin-top:25px;
+        margin-bottom:0px
+        font-size 20px;
+        font-weight: 600;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    li {
+        text-align: left;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 3px;
+    }
+    
+    @media only screen and (max-width: 1300px) {
+        .contents{
+            width: auto;
+            background-color: #fafafa;
+            position: unset;
+        }
+        
+        .mainpanel {
+            margin:auto;
+        }
+        
+    }
+    
+</style>
+
+<html>
+<body>
+    <div class="mainpanel">
+        <h1>Frequently Asked Questions</h1>
+        <div style="text-align:center;">
+            <div class="contents">
+                <h3>Contents</h3>
+                <ul>
+                    <li><a href="#/FAQ#delete_files">I'm having trouble deleting files.</a></li>
+                    <li><a href="#/FAQ#session_length">How long do the sessions last for?</a></li>
+                    <li><a href="#/FAQ#no_machines_available">What do I do if no machines are available?</a></li>
+                    <li><a href="#/FAQ#resize">How do I resize the session?</a></li>
+                    <li><a href="#/FAQ#share">How do I share my analysis environment?</a></li>
+                    <li><a href="#/FAQ#rdp_credentials">Which credentials do I use to log in via RDP?</a></li>
+                    <li><a href="#/FAQ#password_reset">How do I reset my Federal Password?</a></li>
+                    <li><a href="#/FAQ#link_accounts">How do I link my User Office account with my Federal ID?</a></li>
+                    <li><a href="#/FAQ#register_user_office_account">How do I get a user office account?</a></li>
+                    <li><a href="#/FAQ#matlab_version">What version of matlab is on the analysis environments?</a></li>
+                    <li><a href="#/FAQ#matlab_licences">How many matlab licences are available?</a></li>
+                    <li><a href="#/FAQ#copy_paste">How do I copy & paste?</a></li>
+                    <li><a href="#/FAQ#matlab_launch">Why won't matlab launch properly?</a></li>
+                </ul>
+            </div>
+        </div>
+        <h2><a name="delete_files" class="anchor"></a>I'm having trouble deleting files.</h2>
+        <p>
+            If you're having trouble deleting files, you can hold shift and delete,
+            or rightclick > permanently delete to remove the files.
+            WARNING: Files deleted this way will not be recoverable.
+        </p>
+        
+        <h2><a name="session_length" class="anchor"></a></a>How long do the sessions last for?</h2>
+        <p>
+            The sessions currently expire after 72h of inactivity. If you need longer, please contact 
+            <a href="mailto:support@analysis.stfc.ac.uk"> IDAaaS support</a>.
+        </p>
+        
+        <h2><a name="no_machines_available" class="anchor"></a>What do I do if no machines are available?</h2>
+        <p>
+            Hopefully there should always be machines available, but if there aren't any, 
+            please wait 10-15 minutes and try again. If all the machines have been taken, 
+            it takes a few minutes to create some more. 
+            If you're still seeing that there are no machine available, please contact 
+            <a href="mailto:support@analysis.stfc.ac.uk"> IDAaaS support</a>.
+        </p>
+        
+        <h2><a name="resize" class="anchor"></a>How do I resize the session?</h2>
+        <p>
+            If you're using the browser, it will automatically resize to fit the window. 
+            If you're using RDP, you need to click Applications > System > Resolution. 
+            In the display window that opens you can adjust the resolution of the session.
+        </p>
+        <img src="/images/resize.png" alt="resize.png">
+        
+        <h2><a name="share" class="anchor"></a>How do I share my analysis environment?</h2>
+        <p>
+            Next to your analysis environment's "Launch" button is the "Share" button. 
+            Click share, search of the user you want to share with, click their name, 
+            then click "Save Changes".
+        </p>
+        <img src="/images/share.png" alt="share.png">
+        
+        <h2><a name="rdp_credentials" class="anchor"></a>Which credentials do I use to log in via RDP?</h2>
+        <p>
+            For logging in via RDP, you need to use your federal ID and password. 
+            Federal ID's are usually sent out before you come and do your experiment 
+            and are the following format: abc12345. Your password should have been 
+            sent to you by the user office as a picture. Click <a href="#/FAQ#password_reset">here</a> 
+            if you've forgotten it.
+        </p>
+        
+        <h2><a name="password_reset" class="anchor"></a>How do I reset my Federal Password?</h2>
+        <p>
+            To reset your password please contact 
+            <a href="mailto:FITservicedesk@stfc.ac.uk">Facilities IT</a>
+            , they will need your federal id.
+        </p>
+        
+        <h2><a name="link_accounts" class="anchor"></a>How do I link my User Office account with my Federal ID?</h2>
+        <p>
+            If you email <a href="mailto:support@analysis.stfc.ac.uk">support@analysis.stfc.ac.uk</a>
+            with your user office account and federal ID if you know them, 
+            they will be able to link the accounts for you.
+        </p>
+        
+        <h2><a name="register_user_office_account" class="anchor"></a>How do I get a user office account?</h2>
+        <p>
+            You can register for a User office account 
+            <a href="https://users.facilities.rl.ac.uk/">here</a>.
+        </p>
+        
+        <h2><a name="matlab_version" class="anchor"></a>What version of matlab is on the analysis environments?</h2>
+        <p>The default version is R2018a, but you can launch different versions from the terminal by typing one of the following : matlab , matlab2015 , matlab2017 , matlab2018 . </p>
+        
+        <h2><a name="matlab_licences" class="anchor"></a>How many matlab licences are available?</h2>
+        <p>
+            To check how many licences are available, run the following command in the terminal 
+            on your analysis environment : 
+            /mnt/cvmfs/facilities.gridpp.ac.uk/isis/matlab/R2018a/etc/glnxa64/lmutil lmstat -c 
+            /var/daaas/static/license.lic -a
+        </p>
+        
+        <h2><a name="copy_paste" class="anchor"></a>How do I copy & paste?</h2>
+        <p>
+            Currently copy/paste to and from the analysis environments only works when using the browser 
+            (There is work planned to implement copy/paste on RDP too).</br></br>
+            You can copy and paste using the shortcuts you're used to on your computer, 
+            CTRL + C, CTRL + V, CTRL + SHIFT + V, SHIFT + INS all work on Chrome and Safari.</br></br>
+            Firefox doesn't allow SHIFT + INS, so if you want to paste into the terminal on your analysis environment, you will need to use the top bar.</br>
+            <h3>Top Bar</h3>
+            If you move your cursor towards the middle of the top of your window, a bar will drop down.</br>
+            <img src="/images/topbar.png"></br></br>
+            Button 1 opens the copy menu, Button 2 toggles between fullscreen and windowed, and Button 3 opens the paste menu</br></br>
+            <img src="/images/copypastemenus.png"></br></br>
+            Any text that you highlight in your analysis environment will be added to the copy bar so that you can copy it.</br></br>
+            <img src="/images/copymenu.png"></br></br>
+            To use the paste menu, click where you want the text to go in your analysis environment, then paste the your text into the paste menu, then press the paste button.</br></br>
+            <img src="/images/pastemenu.png">    
+        </p>
+        
+        <h2><a name="matlab_launch" class="anchor"></a>Why won't matlab launch properly?</h2>
+        <p>
+            There is currently an issue where matlab fails to launch and doesn't display an error. 
+            This happens when there are no more matlab licences available, see 
+            <a href="#/FAQ#matlab_licences">here</a>, to find out how to check if any licences are available. 
+            If you're still having trouble please contact 
+            <a href="mailto:support@analysis.stfc.ac.uk">IDAaaS Support</a>.
+        </p>
+    </div>
+</body>
+</html>

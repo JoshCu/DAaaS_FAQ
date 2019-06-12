@@ -1,0 +1,114 @@
+<h2><a name="delete_files" href="#delete_files">I'm having trouble deleting files.</a></h2>
+<p>
+    If you're having trouble deleting files, you can hold shift and delete,
+    or rightclick > permanently delete to remove the files.
+    WARNING: Files deleted this way will not be recoverable.
+</p>
+
+<h2><a name="session_length" href="#session_length">How long do the sessions last for?</a></h2>
+<p>
+    The sessions currently last for 48h. If you need longer, see below:
+    <a href="#session_extension">extending your session</a>. 
+</p>
+
+<h2><a name="session_extension" href="#session_extension">How do I extend my session?</a></h2>
+<p>
+    Sessions are ended after 48h of no activity, if you need longer, please contact 
+    <a href="mailto:support@analysis.stfc.ac.uk"> IDAaaS support</a>.
+</p>
+
+<h2><a name="no_machines_available" href="#no_machines_available">What do I do if no machines are available?</a></h2>
+<p>
+    Hopefully there should always be machines available, but if there aren't any, 
+    please wait 10-15 minutes and try again. If all the machines have been taken, 
+    it takes a few minutes to create some more. 
+    If you're still seeing that there are no machine available, please contact 
+    <a href="mailto:support@analysis.stfc.ac.uk"> IDAaaS support</a>.
+</p>
+
+<h2><a name="resize" href="#resize">How do I resize the session?</a></h2>
+<p>
+    If you're using the browser, it will automatically resize to fit the window. 
+    If you're using RDP, you need to click Applications > System > Resolution. 
+    In the display window that opens you can adjust the resolution of the session.
+</p>
+<img src="Images/resize.png" alt="resize.png">
+
+<h2><a name="share" href="#share">How do I share my analysis environment?</a></h2>
+<p>
+    Next to your analysis environment's "Launch" button is the "Share" button. 
+    Click share, search of the user you want to share with, click their name, 
+    then click "Save Changes".
+</p>
+<img src="Images/share.png" alt="share.png">
+
+<h2><a name="rdp_credentials" href="#rdp_credentials">Which credentials do i need to log in via RDP?</a></h2>
+<p>
+    For logging in via RDP, you need to use your federal ID and password. 
+    Federal ID's are usually sent out before you come and do your experiment 
+    and are the following format: abc12345. Your password should have been 
+    sent to you by the user office as a picture. Click <a href="#password_reset">here</a> 
+    if you've forgotten it.
+</p>
+
+<h2><a name="password_reset" href="#password_reset">How do I reset my Federal Password?</a></h2>
+<p>
+    To reset your password please contact 
+    <a href="mailto:FITservicedesk@stfc.ac.uk">Facilities IT</a>
+    , they will need your federal id.
+</p>
+
+<h2><a name="link_accounts" href="#link_accounts">How do I link my User Office account with my Federal ID?</a></h2>
+<p>
+    If you email <a href="mailto:support@analysis.stfc.ac.uk">support@analysis.stfc.ac.uk</a>
+    with your user office account and federal ID if you know them, 
+    they will be able to link the accounts for you.
+</p>
+
+<h2><a name="register_user_office_account" href="#register_user_office_account">How do I get a user office account?</a></h2>
+<p>
+    You can register for a User office account 
+    <a href="https://users.facilities.rl.ac.uk/">here</a>.
+</p>
+
+<h2><a name="matlab_version" href="#matlab_version">What version of matlab is on the analysis environments?</a></h2>
+<p>R2018a</p>
+
+<h2><a name="matlab_licences" href="#matlab_licences">How many matlab licences are available?</a></h2>
+<p>
+    To check how many licences are available, run the following command in the terminal 
+    on your analysis environment : 
+    /mnt/cvmfs/facilities.gridpp.ac.uk/isis/matlab/R2018a/etc/glnxa64/lmutil lmstat -c 
+    /var/daaas/static/license.lic -a
+</p>
+
+<h2><a name="copy_paste" href="#copy_paste">How do I copy & paste?</a></h2>
+<p>
+    Currently copy/paste to and from the analysis environments only works when using the browser 
+    (There is work planned to implement copy/paste on RDP too).</br></br>
+    You can copy and paste using the shortcuts you're used to on your computer, 
+    CTRL + C, CTRL + V, CTRL + SHIFT + V, SHIFT + INS all work on Chrome and Safari.</br></br>
+    Firefox doesn't allow SHIFT + INS, so if you want to paste into the terminal on your analysis environment, you will need to use the top bar.</br>
+    <h3>Top Bar</h3>
+    If you move your cursor towards the middle of the top of your window, a bar will drop down.</br>
+    <img src="Images/topbar.png">
+    </br>
+    Button 1 opens the copy menu, Button 2 toggles between fullscreen and windowed, and Button 3 opens the paste menu</br>
+    <img src="Images/copypastemenus.png">
+    </br>
+    Any text that you highlight in your analysis environment will be added to the copy bar so that you can copy it.</br>
+    <img src="Images/copymenu.png">
+    </br>
+    To use the paste menu, click where you want the text to go in your analysis environment, then paste the your text into the paste menu, then press the paste button.</br>
+    <img src="Images/pastemenu.png">
+
+</p>
+
+<h2><a name="matlab_launch" href="#matlab_launch">Why won't matlab launch properly?</a></h2>
+<p>
+    There is currently an issue where matlab fails to launch and doesn't display an error. 
+    This happens when there are no more matlab licences available, see 
+    <a href="#matlab_licences">here</a>, to find out how to check if any licences are available. 
+    If you're still having trouble please contact 
+    <a href="mailto:support@analysis.stfc.ac.uk">IDAaaS Support</a>.
+</p>
